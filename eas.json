@@ -1,6 +1,15 @@
 {
   "cli": { "version": ">= 5.0.0" },
   "build": {
+    "development": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal",
+        "gradleCommand": ":app:assembleDebug"
+      },
+      "developmentClient": true,
+      "channel": "development"
+    },
     "preview": {
       "android": {
         "buildType": "apk",
