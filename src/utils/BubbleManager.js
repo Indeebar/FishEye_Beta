@@ -16,8 +16,8 @@ class BubbleManager {
   }
 
   // verdict: 'DANGEROUS' | 'SUSPICIOUS' | 'SAFE' | 'SCANNING'
-  setBubbleVerdict(verdict) {
-    if (BubbleModule) BubbleModule.setBubbleVerdict(verdict);
+  setBubbleVerdict(verdict, url = '', reason = '', reasonHindi = '') {
+    if (BubbleModule) BubbleModule.setBubbleVerdict(verdict, url, reason, reasonHindi);
   }
 
   // callback receives url string

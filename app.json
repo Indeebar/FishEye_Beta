@@ -18,12 +18,32 @@
           "category": [
             "android.intent.category.DEFAULT"
           ]
+        },
+        {
+          "action": "android.intent.action.SEND",
+          "data": [
+            {
+              "mimeType": "text/plain"
+            }
+          ],
+          "category": [
+            "android.intent.category.DEFAULT"
+          ]
         }
-      ]
+      ],
+      "runtimeVersion": "1.0.0"
     },
     "extra": {
       "eas": {
         "projectId": "38b0e7b5-060e-4e55-8d9a-b9df2b942693"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/38b0e7b5-060e-4e55-8d9a-b9df2b942693"
+    },
+    "ios": {
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     }
   }

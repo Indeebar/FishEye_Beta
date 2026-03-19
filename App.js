@@ -39,7 +39,7 @@ export default function App() {
 
       await saveToHistory(url, result.verdict, result.reason, result.reasonHindi);
 
-      BubbleManager.setBubbleVerdict(result.verdict);
+      BubbleManager.setBubbleVerdict(result.verdict, url, result.reason, result.reasonHindi);
 
       // Store last scan for bubble-tap navigation
       lastScanRef.current = {
